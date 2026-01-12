@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P5-TM7</title>
+    <title>Playbook-P5-TM08</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 7 - 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 8 - 5to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="global-timer">⏱️ 40:00</span>
@@ -51,7 +51,7 @@
                 <div class="command-section">
                     <h3>🎯 Objetivo de Aprendizaje</h3>
                     <div class="objective-box">
-                        <p><strong>Los estudiantes podrán:</strong> Usar el Micro:Bit y el Kit Nezha Pro para crear secuencias coordinadas de motores y servos y comprender cómo la coordinación multi-movimiento y el control integrado permiten realizar tareas complejas.</p>
+                        <p><strong>Los estudiantes podrán:</strong> Usar Micro:Bit y el Kit Nezha Pro para integrar un servo en una secuencia de movimiento con timing preciso y comprender la coordinación de sistemas y la estabilidad de ejecución.</p>
                     </div>
                 </div>
                 <div class="command-section xolo-prompt">
@@ -63,7 +63,7 @@
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
                         </div>
-                        <pre id="main-prompt">“Explícamme cómo trabajan juntos motores y servos en robots más complejos. Enséñame por qué el orden importa (si el robot se mueve antes o después de accionar el servo) y cómo el tiempo crea coordinación. Luego ayúdame a diseñar una acción combinada: el vehículo avanza, se detiene, levanta una barrera o señal, y vuelve a moverse.”</pre>
+                        <pre id="main-prompt">Ayúdame a integrar el servo al vehículo y a ejecutar la secuencia completa: mover → detener → activar servo → mover. Guíame para probar si la acción ocurre a tiempo, si el servo se activa demasiado pronto o tarde, y cómo ajustar pausas y duración para que la secuencia se vea coordinada.</pre>
                     </div>
                 </div>
                 <div class="command-section">
@@ -72,17 +72,17 @@
                         <div class="essential-card">
                             <div class="essential-icon">🎓</div>
                             <h4>Concepto Clave</h4>
-                            <p>Coordinación de Movimientos: Es como una coreografía de baile; el robot debe saber exactamente cuándo mover sus ruedas y cuándo mover su brazo para que todo funcione bien.</p>
+                            <p>Coordinación de sistemas: Es como una coreografía donde diferentes partes del robot deben trabajar juntas en el momento exacto para que todo funcione bien.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🔧</div>
                             <h4>Habilidad Técnica</h4>
-                            <p>Usar motores y servos al mismo tiempo para realizar una tarea combinada.</p>
+                            <p>Usar un motor servo para realizar una acción específica dentro de una secuencia de movimiento.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🧪</div>
                             <h4>Experimentación</h4>
-                            <p>Probar con diferentes tiempos de espera (pausas) entre el movimiento de los motores y el del servo para entender cómo cambia la fluidez de la tarea.</p>
+                            <p>Probar con diferentes tiempos de pausa y ángulos del servo para entender limitaciones de estabilidad.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">💬</div>
@@ -96,13 +96,13 @@
                     <div class="materials-checklist">
                         <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
                         <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
-                        <label><input type="checkbox"> Micro:Bit (1 por cada 4 estudiantes)</label> <label><input type="checkbox"> Kit Nezha Pro (1 por cada 4 estudiantes)</label>
+                        <label><input type="checkbox"> Micro:Bit + Kit Nezha Pro (1 por cada 4 estudiantes)</label>
                         <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión Nezha instalada</label>
-                        <label><input type="checkbox"> Objetos pequeños para simular paquetes o entregas</label>
+                        <label><input type="checkbox"> Cinta adhesiva o ligas para asegurar el servo si es necesario</label>
                         <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
-                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode -> Extensiones -> Buscar 'Nezha' -> Agregar</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'Nezha' → Agregar</label>
                     </div>
-                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular los cables con cuidado, no forzar los servos manualmente y asegurarse de que el micro:bit esté bien conectado al Kit Nezha Pro.</p>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con delicadeza, no forzar los cables del servo, verificar que el micro:bit esté bien conectado al kit Nezha Pro y desconectar la batería al terminar.</p>
                 </div>
                 <div class="command-section">
                     <h3>🗓️ Secuencia de la Misión (40 min)</h3>
@@ -120,7 +120,7 @@
                             <div class="timeline-content">
                                 <strong>A.I. Gym</strong>
                                 <span class="time-badge">8 min</span>
-                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la coordinación de motores y servos (sin prompt específico).</p>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la coordinación de sistemas (sin prompt específico).</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -154,7 +154,9 @@
                     <div class="troubleshooting-list">
                         <ul>
                             <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
-                            <li><strong>Si el servo no se mueve:</strong> Verificar que esté conectado en el puerto correcto del Kit Nezha (S1, S2, etc.) y que el cable esté en la orientación correcta.</li> <li><strong>Si los motores no tienen fuerza:</strong> Asegurarse de que la batería del Kit Nezha esté cargada y el interruptor de encendido esté en ON.</li> <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                            <li><strong>Si el servo no se mueve:</strong> Verificar que esté conectado en el puerto correcto (S1, S2, etc.) del Kit Nezha y que el cable no esté al revés.</li>
+<li><strong>Si el robot se mueve de forma errática:</strong> Revisar que los motores estén bien conectados y que la batería tenga suficiente carga para alimentar tanto motores como el servo.</li>
+<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
                         </ul>
                     </div>
                 </div>
@@ -175,14 +177,14 @@
                             <li>Dar la bienvenida con energía.</li>
                             <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
                             <li>Proyecta diapositiva 1 con el I Can Statement.</li>
-                            <li>Motiva: "¡Hoy le daremos superpoderes de coordinación a sus robots!".</li>
+                            <li>Motiva: "¡Hoy le daremos una misión especial y movimientos precisos a sus robots!".</li>
                         </ul>
                     </div>
                     <div class="role-card role-xolo">
                         <h4>🤖 Rol de XOLO</h4>
                         <ul>
                             <li>XOLO ya está listo y conoce a cada estudiante.</li>
-                            <li>Sabe que hoy toca aprender sobre la coordinación de movimientos en robots complejos.</li>
+                            <li>Sabe que hoy toca aprender sobre Coordinación de sistemas y sincronización de movimientos.</li>
                         </ul>
                     </div>
                     <div class="role-card role-student">
@@ -198,7 +200,7 @@
                     <h4>📊 Diapositiva 1: I Can Statement</h4>
                     <div class="slide-content">
                         <p><strong>🎯 Hoy seré capaz de:</strong></p>
-                        <p class="highlight-text">🤖 A coordinar motores y servos para que el robot realice tareas complejas.</p>
+                        <p class="highlight-text">🤖 A sincronizar movimientos y un servo para que el robot actúe como un sistema coordinado.</p>
                         <p><strong>Aplicación real:</strong> Los brazos robóticos en las fábricas de autos usan esta tecnología para ensamblar piezas con precisión milimétrica.</p>
                         <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
@@ -228,8 +230,8 @@
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
                             <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
-                            <li>Explica cómo coordinar motores y servos usando tiempos y pausas.</li>
-                            <li>Introduce el concepto de control integrado y causa-efecto.</li>
+                            <li>Explica cómo sincronizar el movimiento de las ruedas con la activación de un servo.</li>
+                            <li>Introduce el concepto de coordinación de sistemas y por qué el timing es vital.</li>
                             <li>Responde dudas sobre los conceptos.</li>
                         </ul>
                     </div>
@@ -237,8 +239,8 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Abrir el chat con XOLO y saludarlo.</li>
-                            <li>Aprender a usar motores y servos para una acción combinada.</li>
-                            <li>Aprender sobre la importancia del orden y el tiempo en la programación.</li>
+                            <li>Aprender a usar el Kit Nezha Pro para mover el robot y el servo en orden.</li>
+                            <li>Aprender sobre la estabilidad de ejecución al programar secuencias.</li>
                             <li>Despejar todas sus dudas preguntando a XOLO.</li>
                         </ul>
                     </div>
@@ -251,14 +253,14 @@
                             <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
                         <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
-                        <p class="highlight-text">🎯 Objetivo: Aprender a usar motores y servos para coordinar movimientos y entender la causa-efecto.</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el Kit Nezha Pro para coordinar movimientos y entender la estabilidad.</p>
                     </div>
                 </div>
                 
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">¡Hola a todos! Ahora vamos a aprender algo increíble. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Vamos a descubrir cómo hacer que nuestros motores y servos trabajen juntos como un equipo. Pregúntenle a XOLO cómo el orden de las acciones cambia lo que hace el robot. ¡Él es el experto y está listo para guiarlos en esta misión de coordinación!</p>
+                        <p class="dialogue assistant">Ahora vamos a aprender algo increíble sobre la coordinación. Por favor, abran su chat con XOLO y salúdenlo con un "¡Hola XOLO!". XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo hacer que su robot se mueva y use su servo en el momento justo. Imaginen que es como enseñarle a bailar a su robot; si se mueve muy rápido o muy lento, la coreografía no sale bien. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
                 </div>
             </div>
@@ -277,7 +279,7 @@
                         <ul>
                             <li>Proyecta la diapositiva 3.</li>
                             <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
-                            <li>Entrega por parejas los Kits Nezha Pro conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Entrega por parejas los Kits Nezha Pro y Micro:Bits conforme los alumnos prueben su GCS en el simulador.</li>
                             <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
                         </ul>
                     </div>
@@ -285,7 +287,7 @@
                         <h4>🤖 Rol de XOLO</h4>
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
-                            <li>Ayuda a desarrollar una idea y un VIBE para un robot repartidor coordinado.</li>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique la coordinación de sistemas.</li>
                             <li>Entrega el GCS de la idea del genio.</li>
                             <li>Resuelve errores de sintaxis o lógica.</li>
                         </ul>
@@ -293,10 +295,10 @@
                     <div class="role-card role-student">
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
-                            <li>Trabajar con XOLO una idea y un VIBE para usar motores y servos coordinados.</li>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el servo y el movimiento coordinado.</li>
                             <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
                             <li>Depurar su programa con XOLO si hay errores.</li>
-                            <li>Conectar los motores y el servo al Kit Nezha Pro y probar.</li>
+                            <li>Conectar el servo al puerto correcto del Kit Nezha y probar.</li>
                         </ul>
                     </div>
                 </div>
@@ -305,29 +307,29 @@
                     <div class="slide-content">
                         <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
                         <div class="prompt-box">
-                            <pre>"Xolo, ayúdame a idear un proyecto aplicado donde mi robot combine movimiento y una acción de servo usando Python. Mi vibe: ‘robot repartidor que llega a una estación y abre una compuerta’. Ayúdame a estructurar la secuencia y luego conviértelo en GCS + código Python, de acuerdo a tu entrenamiento con el robot XGO y Micro:bit."</pre>
+                            <pre>"Xolo, ayúdame a idear mejoras para que la acción combinada sea más precisa y realista usando Python. Mi vibe: ‘robot con misión clara y movimientos coordinados’. Dame 2–3 mejoras y conviértelo en GCS + código Python según tu entrenamiento con el robot XGO y Micro:bit."</pre>
                         </div>
                         <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
                         <ul>
-                            <li>¿El robot realiza la secuencia de movimientos en el orden correcto?</li>
-                            <li>¿Qué pasa si el servo intenta moverse mientras los motores aún están girando a máxima velocidad?</li>
-                            <li>¿Funciona igual la entrega si la pausa es de 1 segundo vs 5 segundos?</li>
-                            <li>¿Cómo ayuda la coordinación de movimientos a que el robot parezca más inteligente y útil?</li>
-                            <li>Si cambias el orden de las acciones, ¿cómo cambia el efecto final de la misión del robot?</li>
+                            <li>¿El robot realiza la secuencia completa (mover, parar, servo, mover) sin trabarse?</li>
+                            <li>¿Qué pasa si el servo intenta moverse mientras el robot todavía está avanzando?</li>
+                            <li>¿Funciona igual de bien la secuencia si aumentas la velocidad de los motores?</li>
+                            <li>¿Cómo ayuda el tiempo de espera (pausa) a que los diferentes sistemas del robot estén coordinados?</li>
+                            <li>¿Por qué es importante que el robot se detenga por completo antes de activar el servo para mantener la estabilidad?</li>
                         </ul>
                     </div>
                 </div>
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">¡Es hora de crear! Vamos a usar nuestra imaginación para diseñar un robot repartidor. Imaginen que su robot llega a una estación y debe abrir una compuerta para entregar un paquete. Pídanle a XOLO que los ayude con la idea y el VIBE, y luego sigan el flujo: idear, obtener su GCS y pasarlo a bloques en MakeCode. Por ejemplo, podrían programar que el robot avance 2 segundos, se detenga, abra el servo 90 grados y luego retroceda. No olviden probar primero en el simulador. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar. ¡A construir!</p>
+                        <p class="dialogue assistant">¡Es hora de crear algo asombroso! Vamos a idear, definir un VIBE, obtener nuestro GCS y luego programar en MakeCode para experimentar. Por ejemplo, podrían crear un robot recolector que avanza hacia un objeto, se detiene, usa su brazo servo para recogerlo y luego sigue su camino. Es fundamental que sigan las preguntas de experimentación para ver si su robot es estable o si se tambalea. Cuando tengan su código listo en el simulador, levanten la mano para que les entregue su hardware. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su código para que la misión sea un éxito total.</p>
                     </div>
                 </div>
                 <div class="challenge-prompt">
                     <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
                     <div class="prompt-box">
                         <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
-                        <p class="challenge-text">"Ya probé con la entrega básica. ¿Puedes enseñarme cómo hacer que mi robot use un sensor para detectar la estación antes de abrir la compuerta?"</p>
+                        <p class="challenge-text">"Ya probé con la secuencia básica. ¿Puedes enseñarme cómo hacer que mi robot use un sensor para decidir cuándo activar el servo automáticamente?"</p>
                     </div>
                 </div>
             </div>
@@ -361,7 +363,7 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Demuestra su programa funcionando a otra pareja.</li>
-                            <li>Explica qué movimientos coordinó bien su robot.</li>
+                            <li>Explica qué tiempos de espera funcionaron mejor para coordinar el servo.</li>
                             <li>Comparte un descubrimiento interesante.</li>
                             <li>Da retroalimentación positiva al compañero.</li>
                         </ul>
@@ -372,12 +374,12 @@
                     <div class="slide-content tps-structure">
                         <div class="tps-phase">
                             <h4>🤔 THINK (30 seg)</h4>
-                            <p>Reflexión individual: ¿Qué movimientos coordinó mejor tu robot? ¿Qué te sorprendió del tiempo de respuesta?</p>
+                            <p>Reflexión individual: ¿Qué pausas funcionaron mejor para que tu robot no perdiera estabilidad? ¿Qué te sorprendió?</p>
                         </div>
                         <div class="tps-phase">
                             <h4>👥 PAIR (2 min)</h4>
                             <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
-                            <p class="highlight-text">Frase guía: "Mi robot coordinó el avance con la apertura de la compuerta. Me sorprendió que el tiempo de pausa fuera tan importante para que no se cayera el paquete."</p>
+                            <p class="highlight-text">Frase guía: "Mi robot coordinó el servo con pausas de un segundo. Me sorprendió que si no se detenía del todo, el servo se movía con mucha vibración."</p>
                         </div>
                         <div class="tps-phase">
                             <h4>💬 SHARE (2 min)</h4>
