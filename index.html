@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P5-TM08</title>
+    <title>Playbook-P5-TM6</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 8 - 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 6 - 5o de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="global-timer">⏱️ 40:00</span>
@@ -51,7 +51,7 @@
                 <div class="command-section">
                     <h3>🎯 Objetivo de Aprendizaje</h3>
                     <div class="objective-box">
-                        <p><strong>Los estudiantes podrán:</strong> Usar Micro:Bit y el Kit Nezha Pro para integrar un servo en una secuencia de movimiento con timing preciso y comprender la coordinación de sistemas y la estabilidad de ejecución.</p>
+                        <p><strong>Los estudiantes podrán:</strong> usar el Micro:Bit + Kit Nezha Pro para armar y controlar un servo motor con precisión angular y comprender la importancia de la consistencia y la seguridad mecánica.</p>
                     </div>
                 </div>
                 <div class="command-section xolo-prompt">
@@ -63,7 +63,7 @@
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
                         </div>
-                        <pre id="main-prompt">Ayúdame a integrar el servo al vehículo y a ejecutar la secuencia completa: mover → detener → activar servo → mover. Guíame para probar si la acción ocurre a tiempo, si el servo se activa demasiado pronto o tarde, y cómo ajustar pausas y duración para que la secuencia se vea coordinada.</pre>
+                        <pre id="main-prompt">“Ayúdame a construir el mecanismo con servo y asegurar que nada se trabe. Luego guíame para implementar el GCS que mueve el servo a 0°, 90° y 180°. Enséñame cómo probar repetición, detectar si vibra, si se atora o si el ángulo real no coincide, y cómo ajustar el diseño o el código.”</pre>
                     </div>
                 </div>
                 <div class="command-section">
@@ -72,17 +72,17 @@
                         <div class="essential-card">
                             <div class="essential-icon">🎓</div>
                             <h4>Concepto Clave</h4>
-                            <p>Coordinación de sistemas: Es como una coreografía donde diferentes partes del robot deben trabajar juntas en el momento exacto para que todo funcione bien.</p>
+                            <p>Precisión y Seguridad: Es como cuando lanzas una pelota; la precisión es lograr que caiga siempre en el mismo lugar, y la seguridad es cuidar que el brazo del robot no se golpee ni se fuerce.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🔧</div>
                             <h4>Habilidad Técnica</h4>
-                            <p>Usar un motor servo para realizar una acción específica dentro de una secuencia de movimiento.</p>
+                            <p>Usar el servo motor para mover piezas en ángulos específicos (0°, 90° y 180°).</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🧪</div>
                             <h4>Experimentación</h4>
-                            <p>Probar con diferentes tiempos de pausa y ángulos del servo para entender limitaciones de estabilidad.</p>
+                            <p>Probar con diferentes ángulos y velocidades para entender limitaciones.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">💬</div>
@@ -98,11 +98,11 @@
                         <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
                         <label><input type="checkbox"> Micro:Bit + Kit Nezha Pro (1 por cada 4 estudiantes)</label>
                         <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión Nezha instalada</label>
-                        <label><input type="checkbox"> Cinta adhesiva o ligas para asegurar el servo si es necesario</label>
+                        <label><input type="checkbox"> Cables de conexión RJ11</label><br><label><input type="checkbox"> Servomotor</label>
                         <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
                         <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'Nezha' → Agregar</label>
                     </div>
-                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con delicadeza, no forzar los cables del servo, verificar que el micro:bit esté bien conectado al kit Nezha Pro y desconectar la batería al terminar.</p>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con delicadeza, no forzar el servo con la mano, verificar que los cables estén bien conectados y no mojar los componentes.</p>
                 </div>
                 <div class="command-section">
                     <h3>🗓️ Secuencia de la Misión (40 min)</h3>
@@ -120,7 +120,7 @@
                             <div class="timeline-content">
                                 <strong>A.I. Gym</strong>
                                 <span class="time-badge">8 min</span>
-                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la coordinación de sistemas (sin prompt específico).</p>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la precisión y el control de servos (sin prompt específico).</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -154,9 +154,7 @@
                     <div class="troubleshooting-list">
                         <ul>
                             <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
-                            <li><strong>Si el servo no se mueve:</strong> Verificar que esté conectado en el puerto correcto (S1, S2, etc.) del Kit Nezha y que el cable no esté al revés.</li>
-<li><strong>Si el robot se mueve de forma errática:</strong> Revisar que los motores estén bien conectados y que la batería tenga suficiente carga para alimentar tanto motores como el servo.</li>
-<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                            <li><strong>Si el servo no se mueve:</strong> Verificar que esté conectado al puerto correcto en el Kit Nezha (S1, S2, etc.) y que la batería esté encendida.</li><li><strong>Si el servo hace un ruido extraño:</strong> Puede estar forzado. Revisa que el mecanismo no esté trabado físicamente.</li><li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
                         </ul>
                     </div>
                 </div>
@@ -177,14 +175,14 @@
                             <li>Dar la bienvenida con energía.</li>
                             <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
                             <li>Proyecta diapositiva 1 con el I Can Statement.</li>
-                            <li>Motiva: "¡Hoy le daremos una misión especial y movimientos precisos a sus robots!".</li>
+                            <li>Motiva: "¡Hoy le daremos movimiento exacto a sus creaciones con el Kit Nezha!".</li>
                         </ul>
                     </div>
                     <div class="role-card role-xolo">
                         <h4>🤖 Rol de XOLO</h4>
                         <ul>
                             <li>XOLO ya está listo y conoce a cada estudiante.</li>
-                            <li>Sabe que hoy toca aprender sobre Coordinación de sistemas y sincronización de movimientos.</li>
+                            <li>Sabe que hoy toca aprender sobre Control de servos y precisión mecánica.</li>
                         </ul>
                     </div>
                     <div class="role-card role-student">
@@ -200,8 +198,8 @@
                     <h4>📊 Diapositiva 1: I Can Statement</h4>
                     <div class="slide-content">
                         <p><strong>🎯 Hoy seré capaz de:</strong></p>
-                        <p class="highlight-text">🤖 A sincronizar movimientos y un servo para que el robot actúe como un sistema coordinado.</p>
-                        <p><strong>Aplicación real:</strong> Los brazos robóticos en las fábricas de autos usan esta tecnología para ensamblar piezas con precisión milimétrica.</p>
+                        <p class="highlight-text">🤖 A controlar un servo motor para que se mueva exactamente a los ángulos que tú decidas.</p>
+                        <p><strong>Aplicación real:</strong> Los brazos robóticos en las fábricas de autos usan esta tecnología para colocar piezas con una precisión milimétrica sin cansarse.</p>
                         <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
@@ -230,8 +228,8 @@
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
                             <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
-                            <li>Explica cómo sincronizar el movimiento de las ruedas con la activación de un servo.</li>
-                            <li>Introduce el concepto de coordinación de sistemas y por qué el timing es vital.</li>
+                            <li>Explica cómo funciona el control de ángulos en un servo motor.</li>
+                            <li>Introduce el concepto de precisión y seguridad mecánica.</li>
                             <li>Responde dudas sobre los conceptos.</li>
                         </ul>
                     </div>
@@ -239,8 +237,8 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Abrir el chat con XOLO y saludarlo.</li>
-                            <li>Aprender a usar el Kit Nezha Pro para mover el robot y el servo en orden.</li>
-                            <li>Aprender sobre la estabilidad de ejecución al programar secuencias.</li>
+                            <li>Aprender a usar el servo motor para realizar movimientos angulares.</li>
+                            <li>Aprender sobre la importancia de la consistencia en los movimientos.</li>
                             <li>Despejar todas sus dudas preguntando a XOLO.</li>
                         </ul>
                     </div>
@@ -253,14 +251,14 @@
                             <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
                         <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
-                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el Kit Nezha Pro para coordinar movimientos y entender la estabilidad.</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el servo motor para mover piezas con precisión y seguridad.</p>
                     </div>
                 </div>
                 
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">Ahora vamos a aprender algo increíble sobre la coordinación. Por favor, abran su chat con XOLO y salúdenlo con un "¡Hola XOLO!". XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo hacer que su robot se mueva y use su servo en el momento justo. Imaginen que es como enseñarle a bailar a su robot; si se mueve muy rápido o muy lento, la coreografía no sale bien. ¡Pregúntenle todo lo que necesiten!</p>
+                        <p class="dialogue assistant">¡Hola a todos! Ahora vamos a aprender algo increíble: cómo darle vida y movimiento preciso a nuestros robots. Abran su chat con XOLO y denle un gran saludo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre los servos y la precisión. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle cómo lograr que el servo se mueva a 90 grados o qué hacer para que no se trabe. ¡XOLO es su guía experto, así que no se queden con ninguna duda!</p>
                     </div>
                 </div>
             </div>
@@ -279,7 +277,7 @@
                         <ul>
                             <li>Proyecta la diapositiva 3.</li>
                             <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
-                            <li>Entrega por parejas los Kits Nezha Pro y Micro:Bits conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Entrega por parejas los Micro:Bits y Kits Nezha Pro conforme los alumnos prueben su GCS en el simulador.</li>
                             <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
                         </ul>
                     </div>
@@ -287,7 +285,7 @@
                         <h4>🤖 Rol de XOLO</h4>
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
-                            <li>Ayuda a desarrollar una idea y un VIBE que aplique la coordinación de sistemas.</li>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique movimiento suave y exacto.</li>
                             <li>Entrega el GCS de la idea del genio.</li>
                             <li>Resuelve errores de sintaxis o lógica.</li>
                         </ul>
@@ -295,10 +293,10 @@
                     <div class="role-card role-student">
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
-                            <li>Trabajar con XOLO una idea y un VIBE para usar el servo y el movimiento coordinado.</li>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el servo motor con fluidez.</li>
                             <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
                             <li>Depurar su programa con XOLO si hay errores.</li>
-                            <li>Conectar el servo al puerto correcto del Kit Nezha y probar.</li>
+                            <li>Conectar el servo al Kit Nezha y probar.</li>
                         </ul>
                     </div>
                 </div>
@@ -307,29 +305,29 @@
                     <div class="slide-content">
                         <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
                         <div class="prompt-box">
-                            <pre>"Xolo, ayúdame a idear mejoras para que la acción combinada sea más precisa y realista usando Python. Mi vibe: ‘robot con misión clara y movimientos coordinados’. Dame 2–3 mejoras y conviértelo en GCS + código Python según tu entrenamiento con el robot XGO y Micro:bit."</pre>
+                            <pre>"Xolo, ayúdame a idear mejoras para que mi mecanismo sea más fluido y confiable usando Python. Mi vibe: ‘movimiento suave y exacto’. Dame ideas de mejora (pausas, ángulos intermedios, velocidad) y conviértelo en un GCS + código Python, según tu entrenamiento con el robot XGO y Micro:bit."</pre>
                         </div>
                         <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
                         <ul>
-                            <li>¿El robot realiza la secuencia completa (mover, parar, servo, mover) sin trabarse?</li>
-                            <li>¿Qué pasa si el servo intenta moverse mientras el robot todavía está avanzando?</li>
-                            <li>¿Funciona igual de bien la secuencia si aumentas la velocidad de los motores?</li>
-                            <li>¿Cómo ayuda el tiempo de espera (pausa) a que los diferentes sistemas del robot estén coordinados?</li>
-                            <li>¿Por qué es importante que el robot se detenga por completo antes de activar el servo para mantener la estabilidad?</li>
+                            <li>¿El servo llega exactamente a los ángulos de 0, 90 y 180 grados?</li>
+                            <li>¿Qué pasa si intentas mover el servo más allá de sus límites físicos?</li>
+                            <li>¿El movimiento es igual de fluido cuando usas pausas cortas vs pausas largas?</li>
+                            <li>¿Por qué es importante que el robot repita el movimiento siempre igual para ser considerado preciso?</li>
+                            <li>¿Qué medidas de seguridad mecánica aplicaste para que el servo no se forzara o se trabara?</li>
                         </ul>
                     </div>
                 </div>
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">¡Es hora de crear algo asombroso! Vamos a idear, definir un VIBE, obtener nuestro GCS y luego programar en MakeCode para experimentar. Por ejemplo, podrían crear un robot recolector que avanza hacia un objeto, se detiene, usa su brazo servo para recogerlo y luego sigue su camino. Es fundamental que sigan las preguntas de experimentación para ver si su robot es estable o si se tambalea. Cuando tengan su código listo en el simulador, levanten la mano para que les entregue su hardware. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su código para que la misión sea un éxito total.</p>
+                        <p class="dialogue assistant">¡Es hora de crear algo asombroso! Vamos a usar todo lo que aprendimos con XOLO para idear un proyecto con movimiento fluido. El flujo es sencillo: platiquen su idea con XOLO, definan el VIBE de 'movimiento suave', obtengan su GCS y pásenlo a bloques en MakeCode. Por ejemplo, podrían crear una barrera de estacionamiento automática o un brazo que saluda con elegancia. Prueben primero en el simulador y luego con su Kit Nezha real. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su código para que todo funcione perfecto. ¡A experimentar!</p>
                     </div>
                 </div>
                 <div class="challenge-prompt">
                     <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
                     <div class="prompt-box">
                         <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
-                        <p class="challenge-text">"Ya probé con la secuencia básica. ¿Puedes enseñarme cómo hacer que mi robot use un sensor para decidir cuándo activar el servo automáticamente?"</p>
+                        <p class="challenge-text">"Ya probé con los movimientos básicos. ¿Puedes enseñarme cómo hacer que mi servo se mueva más lento para que el movimiento se vea más natural y profesional?"</p>
                     </div>
                 </div>
             </div>
@@ -363,7 +361,7 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Demuestra su programa funcionando a otra pareja.</li>
-                            <li>Explica qué tiempos de espera funcionaron mejor para coordinar el servo.</li>
+                            <li>Explica qué ángulos y movimientos funcionaron bien.</li>
                             <li>Comparte un descubrimiento interesante.</li>
                             <li>Da retroalimentación positiva al compañero.</li>
                         </ul>
@@ -374,12 +372,12 @@
                     <div class="slide-content tps-structure">
                         <div class="tps-phase">
                             <h4>🤔 THINK (30 seg)</h4>
-                            <p>Reflexión individual: ¿Qué pausas funcionaron mejor para que tu robot no perdiera estabilidad? ¿Qué te sorprendió?</p>
+                            <p>Reflexión individual: ¿Qué ángulos de movimiento realizó mejor tu servo? ¿Qué te sorprendió?</p>
                         </div>
                         <div class="tps-phase">
                             <h4>👥 PAIR (2 min)</h4>
                             <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
-                            <p class="highlight-text">Frase guía: "Mi robot coordinó el servo con pausas de un segundo. Me sorprendió que si no se detenía del todo, el servo se movía con mucha vibración."</p>
+                            <p class="highlight-text">Frase guía: "Mi servo se movió con precisión entre los ángulos de 0 y 180. Me sorprendió que si no ponía pausas, el movimiento se veía muy brusco."</p>
                         </div>
                         <div class="tps-phase">
                             <h4>💬 SHARE (2 min)</h4>
